@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main()
+{
+
+float diameter,radius,area;
+
+printf("Enter diameter of circle: ");
+scanf("%f",&diameter);
+
+radius=diameter/2;
+printf("\nRadius of circle is %f",radius);
+
+area=3.14*radius*radius;
+printf("\nArea of circle is %f",area);
+}
