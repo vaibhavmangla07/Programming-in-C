@@ -1,0 +1,31 @@
+
+
+#include <stdio.h>
+int main() 
+{
+    int a[100], b[100], c[100], n, i; 
+    printf("Enter no. of elements: ");
+    scanf("%d", &n);
+    
+    for (i = 0; i < n; i++) 
+    {
+        printf("Enter value of array A[]: ");
+        scanf("%d", &a[i]);
+    }
+    printf("\n");
+    for (i = 0; i < n; i++) 
+    {
+        printf("Enter value of array B[]: ");
+        scanf("%d", &b[i]);
+    }
+    printf("\nSubtraction of two arrays are :\n");
+    for (i = 0; i < n; i++)
+    {
+        c[i]=a[i]-b[i];
+    }
+    for (i = 0; i < n; i++) 
+    {
+        printf("postion %d number %d\n",i+1,c[i]);
+    }
+    return 0;
+}

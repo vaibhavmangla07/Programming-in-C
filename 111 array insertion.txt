@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+int main()
+{
+    int n, s, a[100], i, add;
+    printf("Enter number of elements : ");
+    scanf("%d",&n);
+    
+    printf("Enter the array : ");
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    
+    printf("Enter a element and position number : ");
+    scanf("%d %d",&s,&add);
+    add=add-1;
+    for(i=n;i!=add;i--)
+    {
+            a[i]=a[i-1];
+        
+    }
+    a[i]=s;
+    for(i=0;i<n+1;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    return 0;
+}

@@ -1,0 +1,41 @@
+
+#include <stdio.h>
+int main()
+{
+    int i,n,a[10],s=0;
+    char gender;
+    printf("Enter number of Array elements : ");
+    scanf("%d",&n);
+    
+    printf("Enter array elements : ");
+    for(i=0;i<n;i++)
+    {
+    scanf("%d",&a[i]);
+    }
+    
+    printf("Enter a gender (g/b)\n");
+    scanf(" %c",&gender);
+    
+    if(gender=='g')
+      {
+        for(i=1;i<n;i=i+2)
+        {
+        s+=a[i];
+        }
+      }
+           else if(gender=='b')
+          {
+            for(i=0;i<n;i=i+2)
+            {
+             s+=a[i];
+            }
+          }
+          else
+          {
+          printf("Wrong gender\n");
+          }
+      
+      printf("Sum is %d",s);
+      return 0;
+    
+}

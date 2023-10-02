@@ -1,0 +1,29 @@
+
+
+#include <stdio.h>
+int main()
+{
+    int i, p, c, a[10], temp;
+    printf("Enter 10 Arrays : ");
+    for(i=0;i<10;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(p=0;p<10;p++)
+    {
+        for(c=0;c<10-(1+p);c++)
+        {
+            if(a[c]>a[c+1])
+            {
+                temp=a[c];
+                a[c]=a[c+1];
+                a[c+1]=temp;
+            }
+        }
+    }
+    for(c=0;c<10;c++)
+    {
+        printf(" %d ",a[c]);
+    }
+    return 0;
+}

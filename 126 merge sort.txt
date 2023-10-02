@@ -1,0 +1,66 @@
+
+
+
+#include <stdio.h>
+int main()
+{
+    int x[100], y[100], z[200], i, j, n, m, c; 
+    
+    printf("Enter the number of elements in A : ");
+    scanf("%d",&n);
+    
+    printf("Enter Sorted Array A : "); 
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    
+    printf("Enter the number of elements in B: "); 
+    scanf("%d",&m);
+    
+    printf("Enter Sorted Array B : "); 
+    for(j=0;j<m;j++) 
+    {
+        scanf("%d",&y[j]);
+    }
+    
+    i = j = c = 0; 
+    
+    while (i < n && j < m) 
+    {
+        if (x[i] < y[j])
+        {
+            z[c] = x[i];
+            i++;
+        }
+        else
+        {
+            z[c] = y[j];
+            j++;
+        }
+        c++;
+    }
+    
+    while (i < n) 
+    {
+        z[c] = x[i];
+        i++;
+        c++;
+    }
+    
+    while (j < m) 
+    {
+        z[c] = y[j];
+        j++;
+        c++;
+    }
+    
+    printf("\nThe Merged Array\n");
+    for(c=0; c<n+m; c++)
+    {
+        printf("%d ", z[c]); 
+    }
+    printf("\n");
+    
+    return 0;
+}

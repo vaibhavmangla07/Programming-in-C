@@ -1,0 +1,27 @@
+
+
+#include<stdio.h>
+int main()
+{
+    int a1[10], a2[10], i, j, mergedarray[20];
+    printf("Enter 10 numbers in array 1\n");
+    for(i=0;i<10;i++)
+    {
+    scanf("%d",&a1[i]);
+    mergedarray[i]=a1[i];
+    }
+    
+    printf("Enter 10 numbers in array 2\n");
+    for(j=0;j<10;j++)
+    {
+    scanf("%d",&a2[j]);
+    mergedarray[i]=a2[j];
+    i++;
+    }
+    printf("Merged Array\n");
+    for(j=0;j<20;j++)
+    {
+    printf("%d ",mergedarray[j]);
+    }
+    return 0;
+}

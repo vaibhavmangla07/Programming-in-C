@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a[10], i;
+    printf("Enter Array : ");
+    for(i=0;i<10;i++)
+    {
+       scanf("%d",&a[i]);
+    }
+    printf("\nThe Array are \n");
+    for(i=0;i<10;i++)
+    {
+        printf("Position %d number %d \n",i+1,a[i]);
+    }
+
+    return 0;
+}
