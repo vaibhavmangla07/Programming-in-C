@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int i = 2, s = 0;
+
+    printf("The first 100 even numbers are ");
+
+    while (i <= 100)
+    {
+        printf("%d ", i);
+        s = s + i;
+        i = i + 2;
+    }
+
+    printf("\nSum of first 100 even numbers are %d", s);
+    return 0;
+}

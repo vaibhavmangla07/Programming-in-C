@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+int main() 
+{
+    int a = 1, i, n, s = 0, m = 0, count = 0;
+    while (a == 1) 
+    {
+        printf("Enter a number: ");
+        scanf("%d", &n);
+
+        s = s + n;
+        count++; 
+        m = s / count;
+        
+        printf("To enter another number, press 1 / To stop, press 0: ");
+        scanf("%d", &a);
+    }
+    printf("Sum is %d\n", s);
+    printf("Mean is %d\n", m);
+    return 0;
+}
+

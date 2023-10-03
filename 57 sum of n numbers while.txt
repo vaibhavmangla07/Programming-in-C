@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int i = 1, n, s = 0;
+
+    printf("Input Value of terms : ");
+    scanf("%d", &n);
+    printf("The first %d natural numbers are:\n", n);
+
+    while (i <= n)
+    {
+        printf("%d ", i);
+        s += i;
+        i++;
+    }
+
+    printf("\nThe Sum of first %d numbers are : %d \n", n, s);
+    return 0;
+}

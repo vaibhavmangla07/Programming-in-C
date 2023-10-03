@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int i = 1, n, m;
+
+    printf("Input the number (Table to be calculated) : ");
+    scanf("%d", &n);
+    printf("\n");
+
+    while (i <= 10)
+    {
+        printf("%d x %d = %d\n", n, i, n * i);
+        i++;
+    }
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+int main() 
+{
+    int n,sq=0,i=1;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    while (i<n) 
+    {
+        i++;
+        sq= i*i;
+    }
+    printf("Square of %d is %d\n", n, sq);
+    return 0;
+}

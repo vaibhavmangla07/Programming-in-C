@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int i = 1;
+
+    printf("The first 100 odd numbers are: ");
+
+    while (i <= 100)
+    {
+        printf("%d ", i);
+        i = i + 2;
+    }
+
+    return 0;
+}
