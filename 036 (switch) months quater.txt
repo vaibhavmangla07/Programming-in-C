@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() 
+{
+    int month;
+    
+    printf("Enter month number (1-12)\n");
+    scanf("%d", &month);
+
+    switch (month) 
+    {
+        case 1: printf("1st Quarter\n");  break;
+        
+        case 2: printf("1st Quarter\n");  break;
+        
+        case 3: printf("1st Quarter\n");  break;
+        
+        case 4: printf("2nd Quarter\n");  break;
+        
+        case 5: printf("2nd Quarter\n");  break;
+        
+        case 6: printf("2nd Quarter\n");  break;
+        
+        case 7: printf("3rd Quarter\n");  break;
+        
+        case 8: printf("3rd Quarter\n");  break;
+        
+        case 9: printf("3rd Quarter\n");  break;
+        
+        case 10: printf("4th Quarter\n");  break;
+        
+        case 11: printf("4th Quarter\n");  break;
+        
+        case 12: printf("4th Quarter\n");  break;
+        
+        default: printf("Invalid input! Please enter a month number between 1-12.\n");
+    }
+    return 0;
+}
