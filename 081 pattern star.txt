@@ -1,0 +1,21 @@
+
+
+#include <stdio.h>
+
+void main() 
+{
+    int x,y,z;
+
+    for (x= 1; x <= 5; x++)
+      {
+        for (y= 1; y < x ; y++)
+        {
+            printf(" ");
+        }
+        for (z = x; z <= 5; z++) 
+        {
+            printf("*");
+        }
+
+        printf("\n");
+    }}

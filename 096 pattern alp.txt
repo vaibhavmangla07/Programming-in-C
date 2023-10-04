@@ -1,0 +1,13 @@
+
+
+#include <stdio.h>
+void main()
+{
+   char i,j,count='A';
+   for(i='A';i<='E';i++)  //asking value of A=65 and E=69
+   {
+	for(j='A';j<=i;j++)
+	   printf("%c",count++);
+	printf("\n");
+   }
+}
