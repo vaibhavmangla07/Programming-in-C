@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    float p, r, t, si, ap = 0;  // Initialize ap to 0
+    printf("Enter principal amount: ");
+    scanf("%f", &p);
+
+    printf("Enter rate of interest: ");
+    scanf("%f", &r);
+
+    printf("Enter time taken: ");
+    scanf("%f", &t);
+
+    si = (p * r * t) / 100;
+    printf("Simple interest is %f\n", si);
+
+    ap = si + ap;
+    printf("Amount pay is %f\n", ap);
+    
+    return 0;
+}

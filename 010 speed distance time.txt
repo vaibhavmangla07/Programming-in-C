@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int speed, time, distance;
+
+    printf("Enter speed: ");
+    scanf("%d", &speed);
+
+    printf("Enter time: ");
+    scanf("%d", &time);
+
+    distance = speed * time;
+    printf("The distance traversed is %d\n", distance);
+
+    return 0;
+}

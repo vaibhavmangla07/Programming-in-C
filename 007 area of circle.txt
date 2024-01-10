@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    float d, r, a;
+    printf("Enter diameter of circle: ");
+    scanf("%f", &d);
+    
+    r = d / 2;
+    printf("Radius of circle is %f\n", r);  
+    
+    a = 3.14 * r * r;
+    printf("Area of circle is %0.2f\n", a); //0.2 means upto 2 decimals number
+    
+    return 0;
+}
