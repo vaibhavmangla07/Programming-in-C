@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void main()
+{
+    int a, b;
+    
+    printf("Enter two numbers:\n");
+    scanf("%d %d", &a, &b);
+
+    printf("a + b = %d\n", a + b);
+    printf("a - b = %d\n", a - b);
+    printf("a * b = %d\n", a * b);
+
+    // Check if b is not zero to avoid division by zero
+    if (b != 0) 
+    {
+        printf("a / b = %f\n", (float)a / b);
+    } 
+    else 
+    {
+        printf("Cannot divide by zero.\n");
+    }
+}
