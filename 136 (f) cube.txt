@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int c(int number)
+{
+    int cube;
+    cube = number * number * number;
+    return cube;
+}
+
+int main()
+{
+    int n;
+    
+    printf("Enter number : ");
+    scanf("%d",&n);
+    
+    int cube = c(n);
+    printf("Cube is : %d\n",cube);
+    
+}

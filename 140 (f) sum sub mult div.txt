@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int su(int a, int b)
+{
+    int sum;
+    sum = a + b;
+    return sum;
+}
+int m(int a, int b)
+{
+    int mult;
+    mult = a * b;
+    return mult;
+}
+int d(int a, int b)
+{
+    int dv;
+    dv = a / b;
+    return dv;
+}
+int s(int a, int b)
+{
+    int sub;
+    sub = a - b;
+    return sub;
+}
+
+int main()
+{
+    int a, b;
+    
+    printf("Enter two numbers : ");
+    scanf("%d %d",&a,&b);
+    
+    int sum = su(a,b);
+    printf("\nsum         : %d\n",sum);
+    
+    int sub = s(a,b);
+    printf("subtraction : %d\n",sub);
+    
+    int mult = m(a,b);
+    printf("multiple    : %d\n",mult);
+    
+    int dv = d(a,b);
+    printf("division    : %d\n",dv);
+}

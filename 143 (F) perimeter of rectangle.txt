@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int p(int le, int br)
+{
+    int perimeter;
+    perimeter = 2*(le+br);
+    return perimeter;
+    
+}
+
+int main()
+{
+    int l,b;
+    printf("Enter length : ");
+    scanf("%d",&l);
+    
+    printf("Enter breadth : ");
+    scanf("%d",&b);
+    
+    int perimeter = p(l,b);
+    printf("%d\n",perimeter);
+}

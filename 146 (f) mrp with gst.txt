@@ -1,0 +1,26 @@
+//Calculate price with gst
+
+#include<stdio.h>
+
+void calprice(float value);
+
+int main()
+{
+    float value;
+    printf("Enter a price : ");
+    scanf("%f",&value);
+    
+    printf("\n-----------------------------------\n");
+    printf("\nMRP is %f",value);
+    
+    calprice(value);
+    
+    return 0; 
+}
+
+void calprice(float value)
+{
+    value = value + (0.18 * value);
+    
+    printf("\nPrice after adding Gst is %0.3f : ",value);
+}

@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int add(int, int);
+int su(int, int);
+int mul(int, int);
+int dv(int, int);
+
+int main()
+{
+    int m,n,sum, mutiply, divide, subt;
+    
+    printf("Enter two numbers : ");
+    scanf("%d %d",&m,&n);
+    
+    sum = add(m,n);
+    printf("\nAddition : %d\n",sum);
+    
+    mutiply = mul(m,n);
+    printf("Mutiply  : %d\n",mutiply);
+    
+    divide = dv(m,n);
+    printf("Division : %d\n",divide);
+    
+    subt = su(m,n);
+    printf("Subtract : %d\n",subt);
+    
+    return 0;
+    
+}
+
+int add(int a, int b)
+{
+    return (a+b);
+}
+
+int su(int a, int b)
+{
+    return (a-b);
+}
+
+int mul(int a, int b)
+{
+    return (a*b);
+}
+
+int dv(int a, int b)
+{
+    return (a/b);
+}
+
+
+
+
+

@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int sq(int number)
+{
+    int square;
+    square = number * number;
+    return square;
+}
+
+int main()
+{
+    int n;
+    
+    printf("Enter number : ");
+    scanf("%d",&n);
+    
+    int square = sq(n);
+    printf("Square is %d\n",square);
+    
+}

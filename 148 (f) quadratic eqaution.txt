@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h>
+
+float calculateDiscriminant(float a, float b, float c) 
+{
+    return b * b - 4 * a * c;
+}
+
+void calculateAndDisplayRoots(float a, float b, float c) 
+{
+    float r1, r2, d;
+
+    d = calculateDiscriminant(a, b, c);
+
+    if (d > 0) 
+    {
+        r1 = (-b + sqrt(d)) / (2 * a);
+        r2 = (-b - sqrt(d)) / (2 * a);
+        {
+            printf("The real roots are %f and %f\n", r1, r2);
+        }
+    } 
+    else if (d == 0) 
+    {
+        r1 = -b / (2 * a);
+        r2 = r1; // Both roots are equal
+        {
+            printf("Roots are equal and they are %f\n", r1);
+        }
+    } 
+    else 
+    {
+        printf("Roots are imaginary\n");
+    }
+}
+
+int main() 
+{
+    float a, b, c;
+
+    printf("Enter the values of a b c: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    calculateAndDisplayRoots(a, b, c);
+
+    return 0;
+}

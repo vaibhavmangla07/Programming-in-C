@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void printline(void);
+
+int main()
+{
+    printf("\n The text and line using sub-program is printed as :\n");
+    printline();
+
+    printf("\n Vaibhav Mangla \n");
+    printline();
+    
+    printf("\n B.Tech CSE \n");
+    printline();
+
+    printf("\n END THE PROGRAM\n");
+    return 0;
+}
+
+void printline()
+{
+    int i;
+    for (i = 1; i <= 80; i++)
+    {
+        printf("-");
+    }
+    return;
+}

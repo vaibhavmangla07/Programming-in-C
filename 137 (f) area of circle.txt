@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int aoc(int radius)
+{
+    int area;
+    area = 3.14 * radius * radius;
+    return area;
+}
+
+int main()
+{
+    int r;
+    
+    printf("Enter radius : ");
+    scanf("%d",&r);
+    
+    int area = aoc(r);
+    printf("area is %d\n",area);
+    
+}

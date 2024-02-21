@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int isPerfect(int num)
+{
+    int sum = 0;
+    
+    for (int i = 1; i <= num / 2; i++)
+    {
+        if (num % i == 0) 
+        {
+            sum += i;
+        }
+    }
+
+    return (num == sum);
+}
+
+void printPerfectNumbers(int start, int end) 
+{
+    printf("Perfect numbers in the range %d to %d are:\n", start, end);
+
+    for (int i = start; i <= end; i++) 
+    {
+        if (isPerfect(i)) 
+        {
+            printf("%d\n", i);
+        }
+    }
+}
+
+int main() 
+{
+    int start, end;
+
+    printf("Enter the starting range: ");
+    scanf("%d", &start);
+
+    printf("Enter the ending range: ");
+    scanf("%d", &end);
+
+    printPerfectNumbers(start, end);
+
+    return 0;
+}

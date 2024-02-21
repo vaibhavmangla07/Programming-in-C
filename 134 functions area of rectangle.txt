@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int aor(int length, int breadth)
+{
+    int area;
+    area = length * breadth;
+    return area;
+}
+
+int main()
+{
+    int l, b;
+    
+    printf("Enter length and breadth : ");
+    scanf("%d %d",&l,&b);
+    
+    int area = aor(l,b);
+    printf("%d\n",area);
+    
+}
