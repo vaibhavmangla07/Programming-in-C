@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void main()
+{
+    int i,sq;
+
+    printf("Input number of terms : ");
+    scanf("%d", &sq);
+
+    for(i=1;i<=sq;i++)
+    {
+	 printf("Number is : %d \n sqaure of the %d is :%d \n",i,i, (i*i));     
+    }
+}

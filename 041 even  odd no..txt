@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i, j;
+
+    printf("The odd numbers are :");
+    
+    for(i=1;i<=100;i=i+2)
+    {
+        printf("%d ", i);
+    }
+    
+    printf("\n\nThe even numbers are :");
+    
+    for(j=2;j<=100;j=j+2)
+    {
+        printf("%d ", j);
+    }
+    return 0;
+}

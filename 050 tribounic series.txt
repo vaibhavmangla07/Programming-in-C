@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main()
+{
+   long int i,a=0,b=1,c=1,d;
+
+   printf("\nThe 20 Tribounic numbers are: 0 1 ");
+   for(i=0;i<=20;i++)
+   {
+       printf("%ld ",c);
+       d=a+b+c;
+       a=b;
+       b=c;
+       c=d;
+   }
+}

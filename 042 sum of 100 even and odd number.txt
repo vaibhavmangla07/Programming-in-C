@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i, s=0;
+
+    printf("The even numbers are: ");
+    
+    for (i = 2; i <= 200; i += 2)
+    {
+        printf("%d ", i);
+        s += i;
+    }
+
+    printf("\n\nThe Sum of 100 even Natural Numbers: %d \n", s);
+
+    int j, sum = 0;
+
+    printf("\n\nThe odd numbers are: ");
+    
+    for (j = 1; j <= 200; j += 2) 
+    {
+        printf("%d ", j);
+        sum += j;
+    }
+
+    printf("\n\nThe Sum of 100 odd Natural Numbers: %d \n", sum);
+
+    return 0;
+}

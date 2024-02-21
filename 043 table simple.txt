@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main()
+{
+   int j,n,m;
+
+   printf("Input the number \n(Table to be calculated) : ");
+   scanf("%d",&n);
+
+   printf("\n");
+
+   for(j=1;j<=10;j++)
+   {
+       m=n*j;
+     printf("%d\n",m);
+   }
+} 
