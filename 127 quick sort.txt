@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) 
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    // Quicksort algorithm without using a separate function
+    int stack[n];  // Stack to simulate function calls
+    int top = -1;   // Top of the stack
+
+    // Push initial values of low and high to the stack
+    stack[++top] = 0;
+    stack[++top] = n - 1;
+
+    // Continue until the stack is empty
+    while (top >= 0) {
+        // Pop high and low from the stack
+        int high = stack[top--];
+        int low = stack[top--];
+
+        // Choose a pivot element and partition the array
+        int pivot = arr[high];
+        int i = low - 1;
+
+        for (int j = low; j <= high - 1; j++) {
+            if (arr[j] < pivot) {
+                i++;
+                // Swap arr[i] and arr[j]
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+
+        // Swap arr[i + 1] and arr[high]
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+
+        // If there are elements on the left side of the pivot, push them to the stack
+        if (i > low) {
+            stack[++top] = low;
+            stack[++top] = i;
+        }
+
+        // If there are elements on the right side of the pivot, push them to the stack
+        if (i + 2 < high) {
+            stack[++top] = i + 2;
+            stack[++top] = high;
+        }
+    }
+
+    // Display the sorted array
+    printf("Sorted array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
