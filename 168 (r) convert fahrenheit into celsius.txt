@@ -1,0 +1,21 @@
+//Convert fahrenheit into celsius
+#include <stdio.h>
+
+float ConvertTemp(float celsius);
+
+int main(int n)
+{
+    printf("Enter celsius\n");
+    scanf("%d",&n);
+    
+    float far = ConvertTemp(n);
+    printf("Fahrenheit = %0.2f",far);
+    
+    return 0;
+}
+
+float ConvertTemp(float celsius)
+{
+    float far = celsius * (9.0/5.0) + 32 ;
+    return far;
+}

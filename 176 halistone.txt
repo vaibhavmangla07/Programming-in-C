@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void hailstone(int n) 
+{
+    if (n == 1) 
+    {
+        printf("%d ", n);
+        return;
+    }
+
+    if (n % 2 == 0)
+    {
+        printf("%d ", n);
+        hailstone(n / 2);
+    } 
+    else
+    {
+        printf("%d ", n);
+        hailstone(3 * n + 1);
+    }
+}
+
+int main() 
+{
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    printf("The Hailstone sequence of %d is: ", num);
+    hailstone(num);
+    printf("1\n");
+
+    return 0;
+}

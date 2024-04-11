@@ -1,0 +1,25 @@
+//Calculate percentage of three subjects
+#include <stdio.h>
+
+float calculatepercentage(float math, float physics, float chemistry);
+
+int main(int m, int p, int c)
+{
+    printf("Enter marks in math\n");
+    scanf("%d",&m);
+    
+    printf("Enter marks in physics\n");
+    scanf("%d",&p);
+    
+    printf("Enter marks in chemistry\n");
+    scanf("%d",&c);
+    
+    printf("percentage = %0.2f",calculatepercentage(m,p,c));
+    
+    return 0;
+}
+
+float calculatepercentage(float math, float physics, float chemistry)
+{
+    return ( (math + physics + chemistry) / 3 );
+}
