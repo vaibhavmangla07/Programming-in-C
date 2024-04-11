@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+void printPerfectNumbers(int start, int end) 
+{
+    if (start > end) 
+    {
+        return;
+    }
+
+    int sum = 0;
+    for (int i = 1; i <= start / 2; i++) 
+    {
+        if (start % i == 0) 
+        {
+            sum += i;
+        }
+    }
+
+    if (sum == start) 
+    {
+        printf("%d ", start);
+    }
+
+    printPerfectNumbers(start + 1, end);
+}
+
+int main() 
+{
+    int start, end;
+
+    printf("Enter the start and end of the range: ");
+    scanf("%d %d", &start, &end);
+
+    printf("The perfect numbers in the range are: ");
+    printPerfectNumbers(start, end);
+    
+    printf("\n");
+
+    return 0;
+}
+
+

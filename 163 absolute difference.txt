@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int absolute_difference(int a, int b)
+{
+    return (a > b) ? (a - b) : (b - a);
+}
+
+int main() 
+{
+    int x = 100, y = 200;
+  
+    int diff = absolute_difference(x, y);
+  
+    printf("Absolute difference between %d and %d is %d\n", x, y, diff);
+    printf("Absolute difference between %d and %d is %d\n", y, x, diff);
+  
+    return 0;
+}
