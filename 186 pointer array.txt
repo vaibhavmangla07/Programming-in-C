@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() 
+{
+    int arr1[100], i, n;
+    
+    printf("Input the number of elements to store in the array :");
+    scanf("%d", &n); 
+
+    printf("Input %d number of elements in the array :\n", n);
+    for (i = 0; i < n; i++) 
+    {
+        printf("element - %d : ", i);
+        scanf("%d", arr1 + i); 
+    }
+
+    printf("The Elements and Address of elements are : \n");
+    for (i = 0; i < n; i++) 
+    {
+        printf("Element = %d  :  Address = %p \n", *(arr1 + i), (arr1 + i)); 
+    }
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void main ()
+{
+    int i = 10;
+    int *ptr = &i;
+    int **pptr = &ptr;
+
+    printf ("%d\n", **pptr); // number stored in address of pptr
+    printf("%p\n", &pptr); //address of pptr
+    printf ("%p\n", &ptr); //address of ptr
+    printf("%p\n", &i);    //address of i
+
+}

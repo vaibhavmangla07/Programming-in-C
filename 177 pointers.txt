@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+int main() 
+{
+    int age = 22;
+    int *ptr = &age; // Declare a pointer variable ptr and assign the address of age to it
+    int _age = *ptr; // Dereference ptr to get the value stored at the address it points to and assign it to _age
+    
+    printf("\n%d\n", _age); // Print the value stored in _age
+    
+    printf("\n");
+    
+    // Print addresses
+    printf("%p\n", &age); // Print the address of age
+    printf("%p\n", ptr);   // Print the value of ptr, which is the address of age
+    printf("%p\n", &ptr);  // Print the address of ptr
+    
+    printf("\n");
+    
+    // Print addresses as numbers
+    printf("%u\n", &age);  // Print the address of age as an unsigned integer
+    printf("%u\n", ptr);   // Print the value of ptr, which is the address of age, as an unsigned integer
+    printf("%u\n", &ptr);  // Print the address of ptr as an unsigned integer
+    
+    printf("\n");
+    
+    // Print data
+    printf("%d\n", age);   // Print the value of age
+    printf("%d\n", *ptr);  // Dereference ptr to get the value stored at the address it points to (which is age) and print it
+    printf("%d\n", *(&age)); // Dereference the address of age to get the value stored at that address (which is age) and print it
+    
+    return 0;
+}
