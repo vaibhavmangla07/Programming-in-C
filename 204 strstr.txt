@@ -1,0 +1,24 @@
+//strstr(): Returns a pointer to the first occurrence of a substring in a string.
+
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{
+    char str[] = "This is a simple string";
+    char substr[] = "simple";
+
+    // Search for the substring in the string
+    char *ptr = strstr(str, substr);
+
+    if (ptr != NULL) 
+    {
+        printf("Substring '%s' found at position: %ld\n", substr, ptr - str);
+    }
+    else 
+    {
+        printf("Substring '%s' not found.\n", substr);
+    }
+
+    return 0;
+}

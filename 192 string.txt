@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() 
+{
+    char firstname[] = {'P','R','O','G','R','A','M','M','I','N','G',' ','I','N',' ','C','\0'};
+    char secondname[] = "BY VAIBHAV MANGLA";
+    
+    for(int i=0; firstname[i]!='\0';i++)
+    {
+       printf("%c", firstname[i]);
+    }
+    
+    printf("\n");
+    
+    for(int i=0; secondname[i]!='\0';i++)
+    {
+       printf("%c", secondname[i]);
+    }
+    return 0;
+}

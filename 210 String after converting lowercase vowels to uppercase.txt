@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+void convertVowelsToUppercase(char *str) 
+{
+    int i;
+    
+    for (i = 0; str[i] != '\0'; i++) 
+    {
+        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') 
+        {
+            str[i] = str[i] - 32;
+        }
+    }
+}
+
+int main() 
+{
+    char str[100] = "programming in c by vaibhav mangla";
+    
+    convertVowelsToUppercase(str);
+    
+    printf("String after converting lowercase vowels to uppercase: %s\n", str);
+    
+    return 0;
+}
+
+

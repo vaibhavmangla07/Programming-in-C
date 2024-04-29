@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char firststr[100] = "Hello ";
+    char secondstr[100] = "World!";
+    
+    strcat(firststr,secondstr); //concatenates first string with second string
+    puts(firststr); 
+ 
+    return 0;
+}

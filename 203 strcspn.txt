@@ -1,0 +1,16 @@
+//strcspn is a function in C that calculates the length of the initial segment of a string that does not contain any of a specified set of characters.
+
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{
+    char str1[] = "Hello, world!";
+    char str2[] = " ,!?"; // Delimiter characters
+
+    int length = strcspn(str1, str2);
+
+    printf("Length of initial segment without delimiter characters: %d\n", length);
+
+    return 0;
+}

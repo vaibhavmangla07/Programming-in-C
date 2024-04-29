@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char oldstr[] = "Hello world!";
+    char newstr[] = "Programming in C";
+    
+    strcpy(newstr,oldstr);
+    
+    puts(newstr); //print Hello world!
+    puts(oldstr); ////print Hello world!
+
+    return 0;
+}
